@@ -9,29 +9,6 @@ const revealObserver = new IntersectionObserver((entries) => {
 
 document.querySelectorAll('.reveal').forEach((el) => revealObserver.observe(el));
 
-const counterObserver = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (!entry.isIntersecting) return;
-    const el = entry.target;
-    const end = Number(el.dataset.count);
-    const suffix = el.dataset.suffix || '';
-    const decimal = end % 1 !== 0;
-    const start = performance.now();
-    const duration = 1300;
-    const tick = (now) => {
-      const progress = Math.min((now - start) / duration, 1);
-      const eased = 1 - Math.pow(1 - progress, 3);
-      const value = end * eased;
-      el.textContent = (decimal ? value.toFixed(1) : Math.round(value)) + suffix;
-      if (progress < 1) requestAnimationFrame(tick);
-    };
-    requestAnimationFrame(tick);
-    counterObserver.unobserve(el);
-  });
-}, { threshold: 0.65 });
-
-document.querySelectorAll('[data-count]').forEach((el) => counterObserver.observe(el));
-
 const portrait = document.querySelector('#portraitCard');
 const stage = document.querySelector('.portrait-stage');
 if (stage && matchMedia('(pointer:fine)').matches) {

@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Aditya Singh Rathore — FPGA, RTL design, hardware verification, and embedded systems engineer.">
-  <title>Aditya Singh Rathore | FPGA & Verification</title>
+  <meta name="description" content="Aditya Singh Rathore - RTL design and design verification engineer working with Verilog, SystemVerilog, UVM, FPGA tools, and embedded systems.">
+  <title>Aditya Singh Rathore | RTL Design & Verification</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -12,24 +12,30 @@
 </head>
 <body>
   <div class="noise" aria-hidden="true"></div>
+
   <header class="site-header">
     <a class="brand" href="#top" aria-label="Aditya home"><span>ASR</span><i></i></a>
     <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span></button>
     <nav>
-      <a href="#work">Work</a><a href="#about">About</a><a href="#services">Services</a>
-      <a class="nav-cta" href="mailto:adityarajput@gmail.com">Let's talk <span>↗</span></a>
+      <a href="#expertise">Expertise</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a class="nav-cta" href="mailto:adityarajput@gmail.com">Contact <span>&nearr;</span></a>
     </nav>
   </header>
 
   <main id="top">
     <section class="hero section-pad">
       <div class="hero-copy reveal">
-        <p class="eyebrow"><span class="status-dot"></span> Available for FPGA & RTL projects</p>
+        <p class="eyebrow"><span class="status-dot"></span> RTL Design x Design Verification</p>
         <h1>I make silicon<br><em>behave.</em></h1>
-        <p class="hero-intro">FPGA designer and verification engineer building reliable RTL, memory systems, and SoCs that work beyond simulation.</p>
+        <p class="hero-intro">I design digital systems, then verify the assumptions behind them. My focus is reliable RTL, structured testbenches, assertions, coverage, and waveform-led debug.</p>
+        <div class="focus-line" aria-label="Primary areas of focus">
+          <span>DESIGN</span><i></i><span>STIMULATE</span><i></i><span>CHECK</span><i></i><span>COVER</span>
+        </div>
         <div class="hero-actions">
-          <a class="button primary" href="#work">Explore my work <span>↓</span></a>
-          <a class="button text-link" href="assets/Aditya_Rathore_Resume.pdf" download>Download résumé <span>↗</span></a>
+          <a class="button primary" href="#expertise">View expertise <span>&darr;</span></a>
+          <a class="button text-link" href="assets/Aditya_Rathore_Resume.pdf" download>Download resume <span>&nearr;</span></a>
         </div>
       </div>
 
@@ -41,113 +47,176 @@
           <div class="scanline"></div>
           <div class="corner c1"></div><div class="corner c2"></div><div class="corner c3"></div><div class="corner c4"></div>
         </div>
-        <div class="floating-tag tag-one"><span>SYS.CLK</span><b>333.33 MHz</b></div>
-        <div class="floating-tag tag-two"><span>STATUS</span><b><i></i> Hardware verified</b></div>
+        <div class="floating-tag tag-one"><span>VERIFICATION</span><b>Coverage driven</b></div>
+        <div class="floating-tag tag-two"><span>CHECKS</span><b><i></i> Assertions active</b></div>
       </div>
 
       <div class="hero-meta reveal" data-delay="220">
-        <div><span>BASED AT</span><strong>NIT Hamirpur, India</strong></div>
-        <div><span>CURRENTLY</span><strong>Research Intern · IIT Jodhpur</strong></div>
+        <div><span>FROM</span><strong>Jaipur, Rajasthan</strong></div>
+        <div><span>EDUCATION</span><strong>B.Tech, Electrical Engineering</strong></div>
+        <div><span>DIRECTION</span><strong>VLSI Design Verification</strong></div>
       </div>
     </section>
 
-    <section class="proof-strip" aria-label="Engineering highlights">
-      <div><strong data-count="2">0</strong><span>FPGA SoCs<br>hardware verified</span></div>
-      <div><strong data-count="120" data-suffix="+">0</strong><span>HDL problems<br>solved</span></div>
-      <div><strong data-count="100" data-suffix="%">0</strong><span>Code + functional<br>coverage</span></div>
-      <div><strong data-count="6.3" data-suffix="×">0</strong><span>DDR read speedup<br>with D-cache</span></div>
-    </section>
-
-    <section class="work section-pad" id="work">
+    <section class="expertise section-pad" id="expertise">
       <div class="section-heading reveal">
-        <p class="eyebrow">01 / Selected engineering</p>
-        <h2>Built. Debugged.<br><em>Proven on hardware.</em></h2>
+        <p class="eyebrow">01 / Technical expertise</p>
+        <h2>Design it clearly.<br><em>Verify it thoroughly.</em></h2>
       </div>
 
-      <article class="project project-featured reveal">
-        <div class="project-num">01</div>
-        <div class="project-copy">
-          <p class="project-kicker">RISC-V · AXI4 · MIG DDR3</p>
-          <h3>SweRVolf SoC<br>meets real memory.</h3>
-          <p>Integrated a SweRVolf RISC-V SoC with Xilinx MIG DDR3 on the Arty A7-100T, including a custom RTL wrapper, four clock domains, disciplined CDC, and hierarchical reset sequencing.</p>
-          <div class="project-results">
-            <div><b>0</b><span>memory errors<br>across 16 KiB</span></div>
-            <div><b>+1.116 ns</b><span>timing WNS<br>at closure</span></div>
-            <div><b>4</b><span>safe clock<br>domains</span></div>
-          </div>
-          <div class="chips"><span>SystemVerilog</span><span>Vivado 2025.1</span><span>AXI Clock Converter</span><span>ILA</span></div>
-        </div>
-        <div class="project-visual soc-visual" aria-hidden="true">
-          <div class="board-grid"></div>
-          <div class="chip core"><span>RISC-V</span><b>SweRVolf</b></div>
-          <div class="chip ddr"><span>AXI4</span><b>MIG DDR3</b></div>
-          <svg viewBox="0 0 600 450"><path class="trace t1" d="M170 140 H300 V278 H414"/><path class="trace t2" d="M170 170 H265 V310 H414"/><path class="trace t3" d="M170 200 H230 V342 H414"/></svg>
-          <span class="visual-note n1">40 MHz</span><span class="visual-note n2">333.33 MHz</span>
-        </div>
-      </article>
+      <div class="expertise-grid">
+        <article class="expertise-card primary-skill reveal">
+          <div class="card-top"><span>01</span><b>CORE FOCUS</b></div>
+          <div class="skill-icon verify-icon" aria-hidden="true"><span>assert</span><i></i><span>cover</span><i></i><span>debug</span></div>
+          <h3>Design Verification</h3>
+          <p>Verification planning and reusable testbench thinking, with an emphasis on finding design intent mismatches before they reach hardware.</p>
+          <ul>
+            <li>SystemVerilog testbenches</li>
+            <li>UVM methodology</li>
+            <li>SVA and protocol checks</li>
+            <li>Constrained-random stimulus</li>
+            <li>Functional coverage</li>
+            <li>Waveform analysis and debug</li>
+          </ul>
+        </article>
 
-      <div class="project-grid">
+        <article class="expertise-card reveal" data-delay="70">
+          <div class="card-top"><span>02</span><b>DESIGN</b></div>
+          <div class="skill-icon rtl-icon" aria-hidden="true"><span>RTL</span><b>/</b><span>01</span></div>
+          <h3>RTL & Digital Design</h3>
+          <p>Readable, synthesizable logic built with attention to interfaces, timing, reset behavior, and verification from the start.</p>
+          <ul>
+            <li>Verilog and SystemVerilog</li>
+            <li>FSMs and pipelined logic</li>
+            <li>UART and arithmetic blocks</li>
+            <li>Clock-domain crossing basics</li>
+            <li>AXI-based integration</li>
+          </ul>
+        </article>
+
+        <article class="expertise-card reveal" data-delay="140">
+          <div class="card-top"><span>03</span><b>TOOLCHAIN</b></div>
+          <div class="skill-icon tools-icon" aria-hidden="true"><i></i><i></i><i></i></div>
+          <h3>Engineering Tools</h3>
+          <p>Hands-on work across simulation, synthesis, implementation, embedded software, and hardware debug.</p>
+          <ul>
+            <li>Vivado and Vitis</li>
+            <li>Icarus Verilog</li>
+            <li>GTKWave</li>
+            <li>Vivado ILA</li>
+            <li>Git, Python, Tcl</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="workflow reveal">
+        <div class="workflow-intro"><span>MY VERIFICATION MINDSET</span><p>A design is not done when it compiles. It is done when its behavior is understood.</p></div>
+        <div class="workflow-step"><b>01</b><span>Understand<br>the intent</span></div>
+        <div class="workflow-arrow">&rarr;</div>
+        <div class="workflow-step"><b>02</b><span>Build<br>stimulus</span></div>
+        <div class="workflow-arrow">&rarr;</div>
+        <div class="workflow-step"><b>03</b><span>Check &<br>measure</span></div>
+        <div class="workflow-arrow">&rarr;</div>
+        <div class="workflow-step"><b>04</b><span>Debug &<br>refine</span></div>
+      </div>
+    </section>
+
+    <section class="profile section-pad" id="education">
+      <div class="section-heading reveal">
+        <p class="eyebrow">02 / Profile</p>
+        <h2>Learning with<br><em>engineering intent.</em></h2>
+      </div>
+
+      <div class="profile-grid">
+        <div class="profile-copy reveal">
+          <p class="lead">I am an Electrical Engineering undergraduate from Jaipur, building toward a career in VLSI design verification.</p>
+          <p>My interests sit across digital design and verification: understanding how RTL is structured, how corner cases escape, and how testbenches, assertions, coverage, and disciplined debug make a design dependable.</p>
+          <p>This portfolio is intentionally focused. It will continue to grow as I deepen my work in UVM, cocotb, verification automation, and hardware systems.</p>
+          <a class="arrow-link" href="https://github.com/vlsi-with-aditya" target="_blank" rel="noreferrer">View GitHub profile <span>&nearr;</span></a>
+        </div>
+
+        <div class="education-card reveal" data-delay="100">
+          <div class="education-label">EDUCATION</div>
+          <div class="education-year">2024 - 2028</div>
+          <h3>National Institute of Technology Hamirpur</h3>
+          <p>Bachelor of Technology<br><strong>Electrical Engineering</strong></p>
+          <div class="coursework">
+            <span>Digital Electronics</span>
+            <span>Microprocessors & Microcontrollers</span>
+            <span>Neural Networks & Fuzzy Logic</span>
+            <span>Power Electronics</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="experience section-pad" id="experience">
+      <div class="section-heading reveal">
+        <p class="eyebrow">03 / Experience & work</p>
+        <h2>Practical work,<br><em>kept in perspective.</em></h2>
+      </div>
+
+      <div class="experience-row reveal">
+        <div class="experience-date">MAY - JUL 2026</div>
+        <div class="experience-title"><span>RESEARCH INTERNSHIP</span><h3>IIT Jodhpur</h3></div>
+        <p>FPGA and hardware-security research internship on a DRDO-funded project. Worked with RTL integration, DDR3, clocking, reset control, Vivado implementation, ILA debug, and technical documentation.</p>
+      </div>
+
+      <div class="work-label reveal"><span>SELECTED TECHNICAL WORK</span><i></i></div>
+      <div class="project-grid compact-projects">
         <article class="project-card reveal">
+          <div class="project-num">01</div>
+          <div class="mini-visual pipeline"><span>D</span><b>&rarr;</b><span>E</span><b>&rarr;</b><span>W</span></div>
+          <p class="project-kicker">SystemVerilog / Verification</p>
+          <h3>32-bit Pipelined ALU</h3>
+          <p>Three-stage ALU with stall and flush control, supported by constrained-random stimulus, assertions, and coverage-oriented verification.</p>
+          <div class="chips"><span>RTL</span><span>SVA</span><span>Coverage</span><span>GTKWave</span></div>
+        </article>
+
+        <article class="project-card reveal" data-delay="80">
           <div class="project-num">02</div>
           <div class="mini-visual waveform"><i></i><i></i><i></i><i></i></div>
-          <p class="project-kicker">MicroBlaze · Vitis · DDR3</p>
-          <h3>Soft processor,<br>hard evidence.</h3>
-          <p>Complete MicroBlaze system with AXI interconnect, timer, DDR3, bare-metal C, and ILA-led debug. Found the AXI bus, not DDR, was the throughput bottleneck.</p>
-          <div class="chips"><span>MicroBlaze</span><span>Embedded C</span><span>Vitis</span></div>
+          <p class="project-kicker">Verilog / Self-checking TB</p>
+          <h3>Parameterized UART</h3>
+          <p>Configurable TX and RX with parity options and 16x receive oversampling, verified through loopback tests and injected faults.</p>
+          <div class="chips"><span>Verilog</span><span>UART</span><span>Testbench</span></div>
         </article>
-        <article class="project-card reveal" data-delay="100">
+
+        <article class="project-card reveal" data-delay="160">
           <div class="project-num">03</div>
-          <div class="mini-visual pipeline"><span>D</span><b>→</b><span>E</span><b>→</b><span>W</span></div>
-          <p class="project-kicker">SystemVerilog · SVA · Coverage</p>
-          <h3>32-bit pipelined<br>ALU.</h3>
-          <p>Three-stage pipeline with stall and flush hazard control, constrained-random verification, assertions, and complete code plus functional coverage.</p>
-          <div class="chips"><span>RTL</span><span>SVA</span><span>GTKWave</span></div>
+          <div class="mini-visual soc-mini" aria-hidden="true"><span>CPU</span><i></i><span>AXI</span><i></i><span>DDR</span></div>
+          <p class="project-kicker">FPGA / System Integration</p>
+          <h3>FPGA SoC Work</h3>
+          <p>Hands-on integration of MicroBlaze and SweRVolf-based systems with MIG DDR3, AXI infrastructure, Vitis software, and ILA-led debug.</p>
+          <div class="chips"><span>Vivado</span><span>Vitis</span><span>AXI</span><span>DDR3</span></div>
         </article>
       </div>
     </section>
 
-    <section class="about section-pad" id="about">
-      <div class="section-heading reveal"><p class="eyebrow">02 / About</p><h2>Curiosity,<br><em>under timing constraints.</em></h2></div>
-      <div class="about-grid">
-        <div class="about-copy reveal">
-          <p class="lead">I’m an Electrical Engineering undergraduate who likes the point where clean logic meets physical reality.</p>
-          <p>During a DRDO-funded research internship at IIT Jodhpur, I independently brought up two FPGA SoC systems on real hardware. I’m pursuing a career in VLSI verification, and I care about the details that make designs trustworthy: clock-domain crossings, reset behavior, assertions, coverage, timing, and clear documentation.</p>
-          <p>Right now I’m expanding into UVM, cocotb, and embedded Linux on FPGA.</p>
-          <a class="arrow-link" href="https://github.com/visi-with-aditya" target="_blank" rel="noreferrer">Explore my GitHub <span>↗</span></a>
-        </div>
-        <div class="skills-panel reveal" data-delay="100">
-          <p class="panel-label">TECHNICAL TOOLBOX</p>
-          <div class="skill-row"><span>HDL</span><p>Verilog · SystemVerilog · RTL design</p></div>
-          <div class="skill-row"><span>VERIFY</span><p>SVA · constrained-random · coverage · UVM</p></div>
-          <div class="skill-row"><span>FPGA</span><p>Vivado · Vitis · Arty A7 · Basys 3</p></div>
-          <div class="skill-row"><span>SYSTEMS</span><p>AXI4 · MIG DDR3 · MicroBlaze · RISC-V</p></div>
-          <div class="skill-row"><span>CODE</span><p>Python · cocotb · Tcl · bare-metal C</p></div>
-        </div>
+    <section class="interests section-pad">
+      <div class="section-heading reveal">
+        <p class="eyebrow">04 / Current direction</p>
+        <h2>What I am<br><em>building toward.</em></h2>
       </div>
-    </section>
-
-    <section class="services section-pad" id="services">
-      <div class="section-heading reveal"><p class="eyebrow">03 / Freelance services</p><h2>From spec to<br><em>tested bitstream.</em></h2></div>
-      <div class="services-list reveal">
-        <div class="service"><span>01</span><h3>RTL Design</h3><p>Synthesis-ready Verilog and SystemVerilog modules, FSMs, pipelines, UARTs, and custom logic.</p></div>
-        <div class="service"><span>02</span><h3>Verification</h3><p>Self-checking testbenches, SVA, constrained-random stimulus, functional coverage, and waveform debug.</p></div>
-        <div class="service"><span>03</span><h3>FPGA & SoC</h3><p>Vivado IP integration, AXI systems, MIG DDR3, clocking, constraints, timing closure, and ILA debug.</p></div>
-        <div class="service"><span>04</span><h3>Documentation</h3><p>Architecture documents, test reports, block diagrams, and detailed LaTeX or Word design reports.</p></div>
+      <div class="interest-list reveal">
+        <div><span>01</span><h3>UVM & Reusable Verification</h3><p>Building stronger command of agents, sequences, scoreboards, phases, and coverage-driven verification architecture.</p></div>
+        <div><span>02</span><h3>Python Verification</h3><p>Using cocotb, scripting, waveform processing, and regression automation to make verification faster and repeatable.</p></div>
+        <div><span>03</span><h3>Protocols & SoC Verification</h3><p>Growing from block-level RTL toward interface, subsystem, and SoC-level verification around AXI and memory systems.</p></div>
       </div>
     </section>
 
     <section class="contact section-pad reveal">
-      <p class="eyebrow">04 / Start a conversation</p>
-      <h2>Have a design that<br>needs to <em>work?</em></h2>
-      <a class="contact-email" href="mailto:adityarajput@gmail.com">adityarajput@gmail.com <span>↗</span></a>
+      <p class="eyebrow">05 / Start a conversation</p>
+      <h2>Let us verify<br><em>what matters.</em></h2>
+      <a class="contact-email" href="mailto:adityarajput@gmail.com">adityarajput@gmail.com <span>&nearr;</span></a>
       <div class="contact-bottom">
-        <p>Available for freelance work, internships, and VLSI verification opportunities.</p>
-        <div><a href="https://www.linkedin.com/in/aditya-singh-65091315" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="https://github.com/visi-with-aditya" target="_blank" rel="noreferrer">GitHub ↗</a></div>
+        <p>Open to internships, verification opportunities, technical collaboration, and focused freelance work.</p>
+        <div><a href="https://www.linkedin.com/in/aditya-singh-65091315" target="_blank" rel="noreferrer">LinkedIn &nearr;</a><a href="https://github.com/vlsi-with-aditya" target="_blank" rel="noreferrer">GitHub &nearr;</a></div>
       </div>
     </section>
   </main>
 
-  <footer><span>© 2026 Aditya Singh Rathore</span><span>Designed with logic. Verified with care.</span><a href="#top">Back to top ↑</a></footer>
+  <footer><span>&copy; 2026 Aditya Singh Rathore</span><span>RTL design / Design verification</span><a href="#top">Back to top &uarr;</a></footer>
   <script src="script.js"></script>
 </body>
 </html>
